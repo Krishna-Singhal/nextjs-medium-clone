@@ -1,7 +1,13 @@
 import React from "react";
+import { Analytics } from "@vercel/analytics/next";
 
 const RootLayout = ({ children }) => {
-    return <>{children}</>;
+    return (
+        <>
+            {children}
+            <Analytics />
+        </>
+    );
 };
 
 export default RootLayout;
